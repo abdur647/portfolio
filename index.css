@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar-track{
+    -webkit-border-radius: 60px;
+    
+}
+::-webkit-scrollbar {
+    width: 6px;
+    
+}
+
+::-webkit-scrollbar-thumb {
+    height: 180px;
+    /* -webkit-border-radius: 80px; */
+    /* border-radius: 40px; */
+    background: #04b261;
+    -webkit-box-shadow: inset 20 20 20px rgb(0 0 0 / 0%);
+}
+nav img{
+    height: 70px;
+    /* width: 30px; */
+padding: 30px;
+}
+::selection{
+    background-color: #04b261 !important;
+}
+img{
+    height: 300px;
+    width: 400px;
+    border: 2px solid ;
+}
+nav{
+    display: flex;
+}
+nav ul{
+    display: flex;
+justify-content: center;    
+}
+nav li{
+    padding: 20px;
+    
+}
+
+nav li:hover{
+    cursor: pointer;
+}
+nav a{
+    color: #0a0a0a !important;
+
+font-family: 'Source Sans Pro', sans-serif;
+}
+.form{
+    padding-top: 20px;
+    background-color: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec1{
+    display: flex;
+
+}
+.sec1> p{
+    font-size: 2.9vw;
+    line-height: 2.811111vw !important;
+    letter-spacing: -1px;
+}
+
+.form h2{
+    margin-left: 10px;
+}
+input,select, .form button{
+    border: 0px;
+    box-shadow: 0 0 0 0px #ccc;
+    line-height: 1;
+    padding: 0px 3.5% !important;
+    font-size: 0.9722222222222222vw;
+    background-color: #eceff1 !important;
+    margin: 0;
+    border-radius: 2px;
+    height: 6.5vh!important;
+    outline: none;
+    line-height: 1.5vw !important;}
+.sec5{
+    background-color: #233239;
+display: flex;
+padding-left: 10px;
+padding-top: 40px;
+}
+.sec5 h3{    
+    color: white;
+    cursor: pointer;
+}
+.sec5 p{
+    color: rgb(201, 191, 191);
+    
+}
+.sec5 p:hover{
+    color: white;
+    cursor: pointer;
+}
+
+footer{
+        background-color: #233239;
+        text-align: center;
+        color: white;
+        padding: 20px;
+        border-top: 1px solid #324249;
+    }
+button{
+    background-color: #04b261;
+    padding: 15px;
+    color: white;
+    outline: none;
+    border:none;
+    border-radius:3px;
+
+}

@@ -1,0 +1,74 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(56, 67, 75);
+}
+p{
+
+    padding: 10px;
+    font-size: 1.4rem;
+}
+nav a:hover{
+    border-bottom: 2px solid green;
+}
+nav a button:hover{
+border-bottom: none;
+}
+.form{
+    background:linear-gradient(to right bottom, rgb(4, 214, 144) 50%,blue);
+    display: block;
+    padding: 1px 30rem;
+    margin-top: -10px;
+}
+.slider{   
+   
+    height: 500px;
+    width: 400rem;
+     animation-name: change;
+     animation-timing-function: ease-in-out;
+     animation-duration: 60s;
+     animation-iteration-count: infinite;
+    
+    transition-property: background;
+    transition-duration: 0s;
+    transition-timing-function: ease-in-out;
+    transform-origin: center;
+    transition-delay: 4s;
+}
+@keyframes change{
+    0%{
+        background: url('img/sl1.png') no-repeat center center/cover;
+    }
+    10%{
+        background: url('img/sl2.png') no-repeat center center/cover;
+    }
+    20%{
+        background: url('img/sl3.png') no-repeat center center/cover;
+    }
+    30%{
+        background: url('img/sl2.png') no-repeat center center/cover;
+    }
+
+    40%{
+        background: url('img/sl3.png')no-repeat center center/cover;
+    }
+    50%{
+        background: url('img/sl1.png')no-repeat center center/cover;
+    }
+    60%{
+        background: url('img/sl2.png')no-repeat center center/cover;
+    }
+    70%{
+        background: url('img/sl1.png')no-repeat center center/cover;
+    }
+    80%{
+        background: url('img/sl3.png')no-repeat center center/cover;
+    }
+    90%{
+        background: url('img/sl2.png')no-repeat center center/cover;
+    }
+    96%{
+        background: url('img/sl1.png')no-repeat center center/cover;
+    }
+}

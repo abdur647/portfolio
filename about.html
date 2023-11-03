@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <img src="img/logo2.jpg" alt="Logo">
+            <ul>
+                <li><a href="index.html">Home </a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html"><button>
+                            Contact us
+                        </button></a></li>
+    
+            </ul>
+        </nav>
+        <br>
+        <hr>
+    </header>
+    
+    <section class="sec1">
+        <b> A single platform for all
+            <br>
+            your Web development works
+        </b>
+    
+        <p>
+            <br>Hello! I'm Abdur Raheem Chaudry, a passionate web developer with
+            <br>
+            a strong
+            foundation in web technologies with skills in <span id="typing-text"> </span>
+            <br>
+            My journey as a web developer is marked by a commitment to creating engaging 
+
+            <br>
+            and user-friendly websites and web
+            applications. With a keen eye for design, 
+            <br>
+
+            I specialize in crafting visually 
+            appealing user interfaces (UI) that provide
+            <br>
+            <br>
+            I bring your digital visions to life by crafting elegant and functional <br> web solutions
+        </p>
+        <button>Contact Us</button>
+    
+        <span  class="logoo">
+    
+            <img src="img/logo2.jpg" alt="">
+        </span>
+    
+    </section>
+
+ 
+    <section class="sec3">
+        <p> <b> I am having following skills <br>
+    
+            </b>
+        </p>
+        <br>
+        <div class="box1">
+            <img src="img/html.png" alt="">
+            <h3>HTML 5
+                <!-- <br>
+                    <pre>          <span>&#8594;</span> </pre> -->
+            </h3>
+    
+            <p> It's the must use markup language <br>
+            <pre> and having experience in it. </pre>
+            </p>
+            <pre>             <a href="https://www.geeksforgeeks.org/html/" target="_blank"><button>LEARN MORE</button> </a></pre>
+        </div>
+    
+        <div class="box2">
+            <img src="img/css.jpeg" alt="">
+            <h3> CSS 3
+                <!-- <span>&#8594;</span> -->
+            </h3>
+    
+            <p>
+                It is use to style html pages and i<br>
+            <pre>   am having experience in it. </pre>
+            <!-- <pre>                     </pre> -->
+            </p>
+            <pre>            <a href="https://www.geeksforgeeks.org/css/"> <button>LEARN MORE</button> </a></pre>
+        </div>
+    
+        <div class="box3">
+            <img src="img/js.png" alt="">
+            <h3>JavaScript </h3>
+            <!-- <span> &#8594;</span></h3> -->
+    
+            <p>
+                It is use to make websites dynamic and<br>
+            <pre>   more attractive in a look wise </pre>
+            </p>
+            <a href="https://www.geeksforgeeks.org/javascript/"> <button>LEARN MORE </button> </a>
+        </div>
+    
+    </section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    const words = ["HTML", "CSS", "JavaScript", "NodeJs", "ExpressJS"]; // Array of words to be typed
+    const typingSpeed = 300; // Speed in milliseconds between each word change
+    const wordPause = 500; // Pause between words
+
+    const typingText = document.getElementById("typing-text");
+    let wordIndex = 0;
+    let charIndex = 0;
+
+    function typeText() {
+        if (wordIndex < words.length) {
+            const word = words[wordIndex];
+            if (charIndex < word.length) {
+                typingText.textContent += word.charAt(charIndex);
+                charIndex++;
+                setTimeout(typeText, typingSpeed);
+            } else {
+                setTimeout(eraseText, wordPause);
+            }
+        } else {
+            // Restart typing effect
+            wordIndex = 0;
+            charIndex = 0;
+            setTimeout(typeText, typingSpeed);
+        }
+    }
+
+    function eraseText() {
+        if (charIndex >= 0) {
+            const word = words[wordIndex];
+            typingText.textContent = word.substring(0, charIndex);
+            charIndex--;
+            setTimeout(eraseText, typingSpeed / 2);
+        } else {
+            wordIndex++;
+            setTimeout(typeText, typingSpeed);
+        }
+    }
+
+    typeText();
+
+</script>

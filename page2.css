@@ -1,0 +1,63 @@
+
+#sec2{
+    margin-top: -60px;
+    /* background: url("img/food.jpg") no-repeat center center/cover; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 99.5vw; 
+    position: absolute;
+    z-index: 20;
+    background: url("img/food.jpg") no-repeat center center/cover;
+    font-size: 1.4rem;
+    color: oldlace;
+}
+main{
+    color: black;
+    display: block ;
+    /* background-color: rgb(85, 85, 150); */
+    z-index: 30;
+}
+.form{
+    background:linear-gradient(to right bottom, red,blue);
+    display: block;
+    padding: 1px 30rem;
+    margin-top: -10px;
+}
+header a:hover{
+    border-top: 2px solid red;
+}
+input{
+    height: 2rem;
+}
+input[type="submit"]{
+    background-color: #04b261;
+    outline:none ;
+    border: none;
+    padding: 10px 20px;
+    height: auto;
+    font-size: 1.5rem;
+color: white;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+select{
+    padding: 7px 14px;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+}
+textarea{
+    margin-left: 22%;
+    resize: none;
+}
+label{
+    font-size: 1.3rem;
+    color: white;
+}
+
+
+
